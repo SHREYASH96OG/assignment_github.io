@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Event Listeners JS</title>
+ </head>
+
+ <body>
+   <button>Click Me</button>
+   <script>
+document.querySelector("button").addEventListener("click", (e) => {
+        let textContent = e.target.textContent;
+        if (textContent == "Click Me") {
+            e.target.textContent = "I was clicked";
+         }
+         else {
+           e.target.textContent = "Click Me";
+
+         }
+     });
+</script>
+
+
+ </body>
+</html>
